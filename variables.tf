@@ -16,8 +16,7 @@ variable "VCNname" {
 }
 
 variable "ADs" {
- # default = ["unja:EU-FRANKFURT-1-AD-1", "unja:EU-FRANKFURT-1-AD-2", "unja:EU-FRANKFURT-1-AD-3"]
- default = ["mmXc:PHX-AD-1","mmXc:PHX-AD-2","mmXc:PHX-AD-3"]
+ default = ["unja:EU-FRANKFURT-1-AD-1", "unja:EU-FRANKFURT-1-AD-2", "unja:EU-FRANKFURT-1-AD-3"]
 }
 
 variable "Shapes" {
