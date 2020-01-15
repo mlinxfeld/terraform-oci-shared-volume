@@ -129,7 +129,7 @@ Do you want to perform these actions?
 
 (...)
 
-Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
+Apply complete! Resources: 16 added, 0 changed, 0 destroyed.
 
 ```
 
@@ -140,7 +140,8 @@ After testing the environment you can remove the OCI infra. You should just run 
 [opc@terraform-server terraform-oci-shared-volume]$ terraform destroy
 
 oci_identity_compartment.FoggyKitchenCompartment: Refreshing state... [id=ocid1.compartment.oc1..aaaaaaaagillnk7ttj6wpdhmewpibpxc5gbmrfxdtmaa3gfgjzbudesm3tsq]
-oci_core_virtual_network.FoggyKitchenVCN: Refreshing state... [id=ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaadngk4gialu6ikx45brprlpzi2oyibbsl6slts36bar4vgcjlmgjq]
+oci_core_volume.FoggyKitchenWebserverBlockVolume100G: Refreshing state... [id=ocid1.volume.oc1.eu-frankfurt-1.abtheljtll62kegur6wcpxhhte565z6w3zwekuy7g2p3woyvbjlzvajsdwua]
+oci_core_virtual_network.FoggyKitchenVCN: Refreshing state... [id=ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaadngk4giaikqtln2je6fljv4zv4j3to6srgrwhudftuwpeym4p2yq]
 (...)
 
 Plan: 0 to add, 0 to change, 16 to destroy.
