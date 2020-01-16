@@ -103,7 +103,7 @@ resource "null_resource" "FoggyKitchenWebserver1_config_OCFS" {
   inline = ["echo '== 1. Installing OCFS2'",
             "sudo yum install ocfs2-tools-devel ocfs2-tools -y",
 
-            "echo '== 2. Adding nodes to o2cb'",
+            "echo '== 2. Adding cluster to o2cb'",
             "sudo o2cb add-cluster ociocfs2", 
 
             "echo '== 3. Adding nodes to o2cb'",
@@ -159,7 +159,7 @@ resource "null_resource" "FoggyKitchenWebserver2_config_OCFS" {
   inline = ["echo '== 1. Installing OCFS2'",
             "sudo yum install ocfs2-tools-devel ocfs2-tools -y",
 
-            "echo '== 2. Adding nodes to o2cb'",
+            "echo '== 2. Adding cluster to o2cb'",
             "sudo o2cb add-cluster ociocfs2", 
 
             "echo '== 3. Adding nodes to o2cb'",
