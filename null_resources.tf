@@ -127,7 +127,7 @@ resource "null_resource" "FoggyKitchenWebserver1_config_OCFS" {
              "echo '== 6. Mkfs.ocfs2'",
              "sudo mkfs.ocfs2 -L \"ocfs2\" /dev/sdb",
 
-             "echo '== 7. Mount OCFS2 filesytem'",
+             "echo '== 7. Updating /etc/fstab with OCFS2 mount point'",
              "sudo mkdir /ocfs2",
              "sudo /bin/su -c \"echo '/dev/sdb /ocfs2 ocfs2     _netdev,defaults   0 0' >> /etc/fstab\"",
 
@@ -180,7 +180,7 @@ resource "null_resource" "FoggyKitchenWebserver2_config_OCFS" {
              "sudo systemctl enable o2cb",
              "sudo systemctl enable ocfs2",
 
-             "echo '== 6. Mount OCFS2 filesytem'",
+             "echo '== 6. Updating /etc/fstab with OCFS2 mount point'",
              "sudo mkdir /ocfs2",
              "sudo /bin/su -c \"echo '/dev/sdb /ocfs2 ocfs2     _netdev,defaults   0 0' >> /etc/fstab\"",
 
