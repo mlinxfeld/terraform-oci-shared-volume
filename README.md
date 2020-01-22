@@ -4,6 +4,12 @@
 
 In this repository, I have documented my hands on experience with Terrafrom for the purpose of OCI Shared Block Volume and OCFS2 deployment. This set of HCL based Terraform files whioch can customized according to any requirements.   
 
+## Topology diagram
+
+Here is topology diagram of the OCI infrastructure which will be build with Terraform code available in this repository:
+
+![](topology_diagram.jpeg)
+
 ## How to use code 
 
 ### STEP 1.
